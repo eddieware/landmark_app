@@ -27,7 +27,7 @@ class CustomItemList extends StatelessWidget {
    return Row(
      mainAxisSize:MainAxisSize.min,
      children: <Widget>[
-       Icon(IconData(0xF4B3,fontFamily: "CupertinoIcons"),size: 30,color: CupertinoColors.systemYellow,),
+       Icon(IconData(0xF4B3,fontFamily: "CupertinoIcons"),size: 35,color: CupertinoColors.systemYellow,),
        Icon(CupertinoIcons.right_chevron),
        
      ],
