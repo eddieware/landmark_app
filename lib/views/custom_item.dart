@@ -11,15 +11,29 @@ class CustomItemList extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: Image.asset(assetAdress),
-      title: Text(titulo),
-      trailing: _crearIconos(),
-      //Icon(CupertinoIcons.right_chevron)
-    
-    
+    return Container(
+      padding: EdgeInsets.all(5),
+      decoration: BoxDecoration(
+          border: Border(
+        bottom: BorderSide(
+          width: 1.0,
+          color: CupertinoColors.lightBackgroundGray,
+        ),
+      )),
+      child: ListTile(
+        
+        leading: Image.asset(assetAdress),
+        title: Text(titulo),
+        trailing: _crearIconos(),
       
+
+        //Icon(CupertinoIcons.right_chevron)
+      
+      
+        
+      ),
     );
+    
   }
 }
 

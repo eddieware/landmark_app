@@ -37,6 +37,8 @@ class HomeScreen extends StatelessWidget {
     ];
     
     return Container(
+      
+      
         child: Material(
       child: CupertinoPageScaffold(
           // navigationBar: CupertinoNavigationBar(
@@ -49,8 +51,11 @@ class HomeScreen extends StatelessWidget {
           ),
           
           SliverList(
+
             delegate: SliverChildBuilderDelegate(
+
               (context, index) {
+                
                 return CustomItemList(
                     titulo: listaDeLugares[
                         index],
@@ -60,7 +65,9 @@ class HomeScreen extends StatelessWidget {
               childCount: listaDeLugares
                   .length, // determinacion de cuantos items a través de length
             ),
+            
           )
+          
 
           // SliverFillRemaining(
           //   child:Center(child: Text('Hola mundo'),)
