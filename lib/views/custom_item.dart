@@ -3,19 +3,22 @@ import 'package:flutter/material.dart';
 
 class CustomItemList extends StatelessWidget {
   
- const CustomItemList({Key key, this.titulo}) : super(key: key);  
+ const CustomItemList({Key key, this.titulo, this.assetAdress}) : super(key: key);  
   
   final String titulo;
+  final String assetAdress;
 
  
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(CupertinoIcons.add_circled),
+      leading: Image.asset(assetAdress),
       title: Text(titulo),
       trailing: Icon(CupertinoIcons.right_chevron),
-
+    
+    
       
     );
   }
 }
+

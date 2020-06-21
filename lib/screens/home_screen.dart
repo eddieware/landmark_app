@@ -21,6 +21,21 @@ class HomeScreen extends StatelessWidget {
     'Twin Lake',
     'Umbagog'
     ];
+    final listaDeNombres = [
+    'assets/charleyrivers.jpg',
+    'assets/chilkoottrail.jpg',
+    'assets/chincoteague.jpg',
+    'assets/hiddenlake.jpg',
+    'assets/icybay.jpg',
+    'assets/lakemcdonald.jpg',
+    'assets/rainbowlake.jpg',
+    'assets/silversalmoncreek.jpg',
+    'assets/stmarylake.jpg',
+    'assets/turtlerock.jpg',
+    'assets/twinlake.jpg',
+    'assets/umbagog.jpg'
+    ];
+    
     return Container(
         child: Material(
       child: CupertinoPageScaffold(
@@ -38,7 +53,9 @@ class HomeScreen extends StatelessWidget {
               (context, index) {
                 return CustomItemList(
                     titulo: listaDeLugares[
-                        index]); // titulo variable titulo de CustomItemList // lista local de nombres
+                        index],
+                        assetAdress:listaDeNombres[index] ,
+                        ); // titulo variable titulo de CustomItemList // lista local de nombres
               },
               childCount: listaDeLugares
                   .length, // determinacion de cuantos items a través de length
